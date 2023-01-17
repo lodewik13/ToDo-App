@@ -1,4 +1,22 @@
 /* Main container */
+
+.titleMain {
+    margin-bottom: 16px;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0px;
+    color: #7289da;
+}
+
+p {
+    font-size: 16px;
+    margin-top: 0px;
+    color: #333333;
+
+}
+
 #todo-app {
     background-color: #36393f;
     /* Dark gray */
@@ -66,6 +84,13 @@ button[type="submit"] {
 
 #todo-app {
     padding: 24px;
+}
+
+body {
+    padding: 240px;
+    padding-left: 300px;
+    padding-right: 300px;
+    background-color: #e6e6e6;
 }
 
 
