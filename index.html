@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>To-do App</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* Remove bullet points from list items */
+        #todo-list li {
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="todo-app">
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="Add a new to-do"></input>
+            <button type="submit">Add</button>
+        </form>
+        <ul id="todo-list"></ul>
+    </div>
+
+    <script>
+        // Get references to the form, input and list elements
+        const form = document.getElementById('todo-form');
+        const input = document.getElementById('todo-input');
+        const list = document.getElementById('todo-list');
+
+        // Add a submit event listener to the form
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Create a new list item with the text from the input
+            const newItem = document.createElement('li');
+            newItem.innerHTML = `<input type="checkbox" class="checkbox"> ${input.value}`;
+            // Append the new item to the list
+            list.appendChild(newItem);
+            // Clear the input field
+            input.value = '';
+        });
+
+        // add event listener for checkbox
+        list.addEventListener('change', (e) => {
+            if (e.target.classList.contains('checkbox')) {
+                e.target.parentElement.classList.toggle('completed');
+            }
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

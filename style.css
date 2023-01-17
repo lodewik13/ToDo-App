@@ -1,0 +1,73 @@
+/* Main container */
+#todo-app {
+    background-color: #36393f;
+    /* Dark gray */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Form */
+#todo-form {
+    display: flex;
+    align-items: center;
+}
+
+/* Input field */
+#todo-input {
+    background-color: #2f3136;
+    /* Very dark gray */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+/* Button */
+button[type="submit"] {
+    background-color: #7289da;
+    /* Discord blue */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#todo-list ul {
+    margin-bottom: 0px;
+}
+
+/* List items */
+#todo-list li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #2f3136;
+    /* Very dark gray */
+}
+
+#todo-list {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    font-size: 16px;
+}
+
+#todo-app {
+    padding: 24px;
+}
+
+
+
+/* Checkbox */
