@@ -87,12 +87,20 @@ button[type="submit"] {
 }
 
 body {
-    padding: 240px;
-    padding-left: 300px;
-    padding-right: 300px;
-    background-color: #e6e6e6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
+@media (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+    }
 
+    p {
+        font-size: 14px;
+    }
+}
 
 /* Checkbox */
